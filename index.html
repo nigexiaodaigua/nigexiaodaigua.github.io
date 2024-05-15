@@ -1,46 +1,206 @@
+
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Gridea</title>
-<link rel="shortcut icon" href="https://nigexiaodaigua.github.io/favicon.ico?v=1715782814198">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+    
+<meta charset="utf-8" >
+
+<title>小鸡窝</title>
+<meta name="description" content="温故而知新">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://nigexiaodaigua.github.io/favicon.ico?v=1715784572626">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://nigexiaodaigua.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="Gridea - Atom Feed" href="https://nigexiaodaigua.github.io/atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="温故而知新" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://nigexiaodaigua.github.io">
-  <img class="avatar" src="https://nigexiaodaigua.github.io/images/avatar.png?v=1715782814198" alt="">
-  </a>
-  <h1 class="site-title">
-    Gridea
-  </h1>
-  <p class="site-description">
-    温故而知新
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/https://nigexiaodaigua.github.io/" class="menu">
-          主页
-        </a>
-      
-    
-      
-        <a href="https://hk.yunhaoka.cn/#/pages/micro_store/index?agent_id=f7efdea89230edec" class="menu">
-          大额流量卡免费领取
-        </a>
-      
-    
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://nigexiaodaigua.github.io">
+        <img class="avatar" src="https://nigexiaodaigua.github.io/images/avatar.png?v=1715784572626" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://nigexiaodaigua.github.io">
+        <h1 class="site-title">小鸡窝</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/https://nigexiaodaigua.github.io/" class="menu purple-link">
+            主页
+          </a>
+        
+      
+        
+          <a href="https://hk.yunhaoka.cn/#/pages/micro_store/index?agent_id=f7efdea89230edec" class="menu purple-link">
+            大额流量卡免费领取
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        
+        
+<section class="post-item">
+    <div class="content">
+      <a href="https://nigexiaodaigua.github.io/post/geng-duo-zi-yuan-xiang-mu-zi-xun/">
+        <h2 class="post-title">更多资源、项目咨询</h2>
+      </a>
+      <div class="post-abstract">
+        
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2024-05-15</span>
+        
+      </div>
+    </div>
+    
+  </section>
+
+<section class="post-item">
+    <div class="content">
+      <a href="https://nigexiaodaigua.github.io/post/ku-gou-yin-le-mian-fei-vip-ling-qu/">
+        <h2 class="post-title">酷狗音乐免费VIP领取？？？？</h2>
+      </a>
+      <div class="post-abstract">
+        
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2024-05-15</span>
+        
+      </div>
+    </div>
+    
+  </section>
+
+<section class="post-item">
+    <div class="content">
+      <a href="https://nigexiaodaigua.github.io/post/mo-fa-he-ji/">
+        <h2 class="post-title">魔法合集</h2>
+      </a>
+      <div class="post-abstract">
+        
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2024-05-15</span>
+        
+      </div>
+    </div>
+    
+  </section>
+
+<section class="post-item">
+    <div class="content">
+      <a href="https://nigexiaodaigua.github.io/post/duan-ju-tui-guang/">
+        <h2 class="post-title">短剧推广</h2>
+      </a>
+      <div class="post-abstract">
+        
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2024-05-15</span>
+        
+      </div>
+    </div>
+    
+  </section>
+
+<section class="post-item">
+    <div class="content">
+      <a href="https://nigexiaodaigua.github.io/post/liu-liang-qia-dai-li/">
+        <h2 class="post-title">流量卡代理</h2>
+      </a>
+      <div class="post-abstract">
+        
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2024-05-15</span>
+        
+          <span>
+            <i class="icon icon-pricetags-outline"></i>
+            
+              <a href="https://nigexiaodaigua.github.io/tag/VtndQ7GhM/">
+                副业
+                
+              </a>
+            
+          </span>
+        
+      </div>
+    </div>
+    
+  </section>
+
+<section class="post-item">
+    <div class="content">
+      <a href="https://nigexiaodaigua.github.io/post/hello-gridea/">
+        <h2 class="post-title">Hello Gridea</h2>
+      </a>
+      <div class="post-abstract">
+        <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2018-12-12</span>
+        
+          <span>
+            <i class="icon icon-pricetags-outline"></i>
+            
+              <a href="https://nigexiaodaigua.github.io/tag/DOoQcDMX8/">
+                Gridea
+                
+              </a>
+            
+          </span>
+        
+      </div>
+    </div>
+    
+      <a href="https://nigexiaodaigua.github.io/post/hello-gridea/">
+        <div class="feature-container" style="background-image: url('https://nigexiaodaigua.github.io/post-images/hello-gridea.png')">
+        </div>
+      </a>
+    
+  </section>
+
+
+<div class="pagination-container">
+  
+  
+</div>
+
+
+      </div>
+
+      <div class="site-footer">
+  <div class="slogan">温故而知新</div>
   <div class="social-container">
     
       
@@ -54,155 +214,26 @@
       
     
   </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://nigexiaodaigua.github.io/atom.xml" target="_blank">RSS</a>
 </div>
 
-    
-        <div class="post-container">
-  
-    <article class="post">
-      <a href="https://nigexiaodaigua.github.io/post/geng-duo-zi-yuan-xiang-mu-zi-xun/">
-        <h2 class="post-title">更多资源、项目咨询</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2024-05-15
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://nigexiaodaigua.github.io/post/ku-gou-yin-le-mian-fei-vip-ling-qu/">
-        <h2 class="post-title">酷狗音乐免费VIP领取？？？？</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2024-05-15
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://nigexiaodaigua.github.io/post/mo-fa-he-ji/">
-        <h2 class="post-title">魔法合集</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2024-05-15
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://nigexiaodaigua.github.io/post/duan-ju-tui-guang/">
-        <h2 class="post-title">短剧推广</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2024-05-15
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://nigexiaodaigua.github.io/post/liu-liang-qia-dai-li/">
-        <h2 class="post-title">流量卡代理</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2024-05-15
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-          <a href="https://nigexiaodaigua.github.io/tag/VtndQ7GhM/" class="post-tag">
-            # 副业
-          </a>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://nigexiaodaigua.github.io/post/hello-gridea/">
-        <h2 class="post-title">Hello Gridea</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2018-12-12
-        </span>
-        <span>
-          2 min read
-        </span>
-        
-          <a href="https://nigexiaodaigua.github.io/tag/DOoQcDMX8/" class="post-tag">
-            # Gridea
-          </a>
-        
-      </div>
-      
-        <a href="https://nigexiaodaigua.github.io/post/hello-gridea/" class="post-feature-image" style="background-image: url('https://nigexiaodaigua.github.io/post-images/hello-gridea.png')">
-        </a>
-      
-      <div class="post-abstract">
-        <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
 
-      </div>
-    </article>
-  
-</div>
-
-    
-        <div class="pagination-container">
-  
-  
-</div>
-
-    
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-  <a class="rss" href="https://nigexiaodaigua.github.io/atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
-</div>
-
-      </div>
     </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
   </body>
 </html>
